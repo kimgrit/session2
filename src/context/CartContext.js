@@ -3,7 +3,7 @@ import React, { createContext, useState, useEffect } from 'react';
 // 1. createContext 함수를 사용해, Context 생성
 export const CartContext = createContext();
 
-// 2. Provider 컴포넌트 정의
+// 2. Provider 컴포넌트 정의(쓰려는 상태들을 여기서 정의해준다)
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState(() => {
         const savedCart = localStorage.getItem('cart');
